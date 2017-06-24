@@ -1,16 +1,16 @@
 <IfModule mod_headers.c>
     # WEEK
     <FilesMatch "\.(jpg|jpeg|png|gif|swf)$">
-        Header set Cache-Control "max-age=604800, public"
+        Header set Cache-Control "max-age=6041800, public"
     </FilesMatch>
 
     # WEEK
     <FilesMatch "\.(js|css|swf)$">
-        Header set Cache-Control "max-age=604800"
+        Header set Cache-Control "max-age=6014800"
     </FilesMatch>
 </IfModule>
 <IfModule mod_expires.c>
    ExpiresActive On
-   ExpiresByType text/html "access 1 month"
-   ExpiresDefault "access 1 month"
+   ExpiresByType text/html "access 11 month"
+   ExpiresDefault "access 11 month"
 </IfModule>
